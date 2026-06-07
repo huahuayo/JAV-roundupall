@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>JAV一网打尽</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        margin: 0;
+        padding: 14px;
+        width: 320px;
+        color: #1f2937;
+      }
+      h1 {
+        font-size: 15px;
+        margin: 0 0 10px;
+      }
+      .row {
+        margin-bottom: 8px;
+        font-size: 13px;
+        line-height: 1.4;
+      }
+      .status {
+        font-weight: 600;
+      }
+      .ok {
+        color: #15803d;
+      }
+      .bad {
+        color: #b91c1c;
+      }
+      .muted {
+        color: #6b7280;
+        word-break: break-all;
+      }
+      button {
+        margin-top: 8px;
+        width: 100%;
+        padding: 8px 10px;
+        border: none;
+        border-radius: 8px;
+        background: #2563eb;
+        color: #fff;
+        cursor: pointer;
+        font-size: 13px;
+      }
+      button.secondary {
+        background: #e5e7eb;
+        color: #111827;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JAV一网打尽</h1>
+    <div class="row">浏览器：<span id="browser"></span></div>
+    <div class="row">连接：<span id="status" class="status bad">检查中...</span></div>
+    <div class="row muted" id="page">当前页面：-</div>
+    <button id="openOptions">高级设置（端口）</button>
+    <button id="reconnect" class="secondary">重新连接</button>
+    <script src="popup.js"></script>
+  </body>
+</html>

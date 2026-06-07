@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+*.spec.bak
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+.env
+*.db-journal
+
+.cursor/
+.pytest_cache/
+release/
+
+# Local databases / logs
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Personal sync exports and scraped data in project root
+/*.txt
+!requirements.txt
+
+# Packaging docs are safe to publish
+!packaging/USER_GUIDE.txt
+
+# Extra patterns for personal subtitle/sync dumps
+*待匹配字幕.txt
+JHS.txt

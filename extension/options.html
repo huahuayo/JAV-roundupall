@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>JAV一网打尽 设置</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        max-width: 520px;
+        margin: 32px auto;
+        padding: 0 16px;
+        color: #111827;
+      }
+      label {
+        display: block;
+        margin-top: 16px;
+        font-weight: 600;
+      }
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 6px;
+        padding: 10px 12px;
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+        font-size: 14px;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px 16px;
+        border: none;
+        border-radius: 8px;
+        background: #2563eb;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .hint {
+        margin-top: 18px;
+        color: #4b5563;
+        line-height: 1.6;
+        font-size: 14px;
+      }
+      #saved {
+        margin-top: 12px;
+        color: #15803d;
+        font-size: 14px;
+        min-height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JAV一网打尽 设置</h1>
+    <p class="hint">
+      首次连接时，请在桌面程序弹出的窗口中点「是」允许扩展连接，无需手动复制配对码。
+      Edge 与 115 浏览器需分别安装本扩展（加载同一 extension 文件夹即可）。
+    </p>
+
+    <label for="port">端口（默认 17892，一般无需修改）</label>
+    <input id="port" type="number" min="1024" max="65535" />
+
+    <button id="save">保存</button>
+    <button id="reset" type="button" style="margin-left: 8px; background: #6b7280;">重置配对</button>
+    <div id="saved"></div>
+
+    <script src="options.js"></script>
+  </body>
+</html>

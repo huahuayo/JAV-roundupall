@@ -1,0 +1,205 @@
+/* JAV Manager — 女优页屏蔽 / 中庸 */
+
+.jm-actress-actions {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.jm-actress-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.jm-block-actress {
+  background: #dc2626;
+}
+
+.jm-block-actress:hover {
+  background: #b91c1c;
+}
+
+.jm-block-actress.jm-active {
+  background: #7f1d1d;
+}
+
+.jm-batch-gentxt {
+  background: #2563eb;
+}
+
+.jm-batch-gentxt:hover {
+  background: #1d4ed8;
+}
+
+.jm-actress-folder-path {
+  display: block;
+  margin: 8px 0 0;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #f3f4f6;
+  color: #374151;
+  font-size: 12px;
+  line-height: 1.45;
+  word-break: break-all;
+}
+
+.jm-batch-manual-sub {
+  background: #7c3aed;
+}
+
+.jm-batch-manual-sub:hover {
+  background: #6d28d9;
+}
+
+#jm-manual-subtitle-modal.jm-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  background: rgba(0, 0, 0, 0.45);
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+#jm-manual-subtitle-modal.jm-modal-overlay.jm-visible {
+  display: flex;
+}
+
+#jm-manual-subtitle-modal .jm-modal-dialog {
+  width: min(920px, 96vw);
+  max-height: 86vh;
+  overflow: auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+#jm-manual-subtitle-modal .jm-manual-subtitle-body {
+  margin-top: 8px;
+}
+
+.jm-mediocre-actress {
+  background: #d97706;
+}
+
+.jm-mediocre-actress:hover {
+  background: #b45309;
+}
+
+.jm-mediocre-actress.jm-active {
+  background: #92400e;
+}
+
+.jm-mediocre-note {
+  font-size: 13px;
+  color: #b45309;
+  max-width: 420px;
+  line-height: 1.4;
+}
+
+.jm-mediocre-tag {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.jm-pending-download-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.jm-magnet-saved-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.jm-video-downloaded-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: #ede9fe;
+  color: #6d28d9;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.jm-video-cracked-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: #fce7f3;
+  color: #be185d;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#jm-block-actress-modal,
+#jm-mediocre-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100001;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+#jm-block-actress-modal.jm-visible,
+#jm-mediocre-modal.jm-visible {
+  display: flex;
+}
+
+#jm-block-actress-modal .jm-block-dialog,
+#jm-mediocre-modal .jm-block-dialog {
+  width: min(380px, calc(100vw - 32px));
+  padding: 16px;
+  border-radius: 12px;
+  background: #fff;
+  color: #111827;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+}
+
+#jm-block-actress-modal textarea,
+#jm-mediocre-modal textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 13px;
+  resize: vertical;
+}
+
+#jm-block-actress-confirm {
+  background: #dc2626;
+  color: #fff;
+}
+
+#jm-mediocre-confirm {
+  background: #d97706;
+  color: #fff;
+}

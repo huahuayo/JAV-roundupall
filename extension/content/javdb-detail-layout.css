@@ -1,0 +1,146 @@
+/* JHS 风格详情页微调：仅隐藏多余元素，不改原生排布 */
+
+html.jm-detail-layout-active .sub-header,
+body.jm-detail-layout-active .sub-header,
+html.jm-detail-layout-active #footer,
+body.jm-detail-layout-active #footer,
+html.jm-detail-layout-active .app-desktop-banner,
+body.jm-detail-layout-active .app-desktop-banner,
+html.jm-detail-layout-active .fixed-bottom-bar,
+body.jm-detail-layout-active .fixed-bottom-bar,
+html.jm-detail-layout-active .app-banner,
+body.jm-detail-layout-active .app-banner,
+html.jm-detail-layout-active [class*="desktop-banner"],
+body.jm-detail-layout-active [class*="desktop-banner"],
+html.jm-detail-layout-active div[data-controller="movie-tab"] .tabs,
+body.jm-detail-layout-active div[data-controller="movie-tab"] .tabs,
+html.jm-detail-layout-active h3.main-title,
+body.jm-detail-layout-active h3.main-title,
+html.jm-detail-layout-active .top-meta,
+body.jm-detail-layout-active .top-meta,
+html.jm-detail-layout-active .float-buttons,
+body.jm-detail-layout-active .float-buttons,
+html.jm-detail-layout-active .movie-list-related,
+body.jm-detail-layout-active .movie-list-related,
+html.jm-detail-layout-active #recommend-container,
+body.jm-detail-layout-active #recommend-container,
+html.jm-detail-layout-active .recommend-container,
+body.jm-detail-layout-active .recommend-container,
+html.jm-detail-layout-active .recommended-videos,
+body.jm-detail-layout-active .recommended-videos,
+html.jm-detail-layout-active .jm-related-hidden,
+body.jm-detail-layout-active .jm-related-hidden {
+  display: none !important;
+}
+
+html.jm-detail-layout-active div.video-detail .tabs.no-bottom > ul,
+body.jm-detail-layout-active div.video-detail .tabs.no-bottom > ul {
+  display: none !important;
+}
+
+html.jm-detail-layout-active div.tabs.no-bottom,
+body.jm-detail-layout-active div.tabs.no-bottom,
+html.jm-detail-layout-active .tabs ul,
+body.jm-detail-layout-active .tabs ul {
+  border-bottom: none !important;
+}
+
+html.jm-detail-layout-active .video-detail .movie-list,
+body.jm-detail-layout-active .video-detail .movie-list,
+html.jm-detail-layout-active .video-detail .movie-list.h,
+body.jm-detail-layout-active .video-detail .movie-list.v,
+html.jm-detail-layout-active .video-detail .jm-related-hidden,
+body.jm-detail-layout-active .video-detail .jm-related-hidden {
+  display: none !important;
+}
+
+html.jm-detail-layout-active section .container,
+body.jm-detail-layout-active section .container,
+html.jm-detail-layout-active .video-detail .container {
+  max-width: 100% !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.jm-compact-shell {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  width: 100%;
+  margin: 8px 0 0;
+}
+
+.jm-compact-left {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.jm-compact-magnets {
+  flex: 0 1 380px;
+  min-width: 280px;
+  max-width: 420px;
+  max-height: calc(100vh - 88px);
+  overflow: auto;
+  padding-top: 2px;
+}
+
+.jm-compact-left > .columns {
+  margin-bottom: 6px !important;
+}
+
+#jm-compact-left .movie-gallery,
+#jm-compact-left #preview-tabs,
+#jm-compact-left .preview-images,
+#jm-compact-left .video-preview {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.jm-compact-magnets #magnets-content,
+.jm-compact-magnets div[data-controller="movie-tab"] .tab-content {
+  display: block !important;
+}
+
+.jm-compact-magnets div[data-controller="movie-tab"] .tabs,
+.jm-compact-magnets h3.main-title {
+  display: none !important;
+}
+
+html.jm-detail-layout-active #jm-detail-sticker-actions,
+body.jm-detail-layout-active #jm-detail-sticker-actions {
+  margin-top: 0;
+}
+
+html.jm-detail-layout-active .columns:has(#jm-detail-actions-row),
+body.jm-detail-layout-active .columns:has(#jm-detail-actions-row) {
+  margin-bottom: 6px !important;
+  flex-wrap: wrap;
+}
+
+.jm-detail-actions-row {
+  flex: 1 1 100%;
+  display: flex;
+  width: 100%;
+  margin: 2px 0 0;
+  clear: both;
+}
+
+.jm-detail-actions-row #jm-detail-sticker-actions {
+  margin: 0 !important;
+  padding: 6px 8px !important;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 6px;
+  border-top: none !important;
+}
+
+.jm-detail-actions-row #jm-detail-sticker-actions .jm-act {
+  font-size: 12px;
+  padding: 7px 11px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.jm-native-hidden {
+  display: none !important;
+}

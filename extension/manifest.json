@@ -1,0 +1,59 @@
+{
+  "manifest_version": 3,
+  "name": "JAV一网打尽",
+  "version": "2.4.24",
+  "description": "连接 JAV一网打尽 桌面程序：JavDB 贴纸、磁链生成、收藏女优同步与列表布局增强。",
+  "permissions": ["tabs", "storage", "alarms", "scripting", "notifications", "downloads"],
+  "host_permissions": [
+    "http://127.0.0.1/*",
+    "http://localhost/*",
+    "https://javdb.com/*",
+    "https://*.javdb.com/*",
+    "https://18mag.net/*",
+    "https://missav.live/*",
+    "https://www.javbus.com/*",
+    "https://javbus.com/*",
+    "https://sukebei.nyaa.si/*",
+    "https://javstore.net/*",
+    "https://115.com/*",
+    "https://webapi.115.com/*",
+    "https://api-shoulei-ssl.xunlei.com/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "JAV一网打尽",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["https://javdb.com/*", "https://*.javdb.com/*"],
+      "js": [
+        "lib/magnet-keyword-match-sw.js",
+        "content/magnet-pattern-match.js",
+        "content/magnet-display-rules.js",
+        "content/javdb-layout.js",
+        "content/javdb-stickers.js",
+        "content/javdb-actress-profile.js",
+        "content/javdb-detail-layout.js",
+        "content/javdb-detail-enhance.js"
+      ],
+      "css": [
+        "content/javdb-layout.css",
+        "content/javdb-stickers.css",
+        "content/javdb-actress-profile.css",
+        "content/javdb-detail-layout.css",
+        "content/javdb-detail-enhance.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
